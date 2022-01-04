@@ -28,4 +28,9 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
+
+  let displayMeat = slides[slideIndex-1]
+  return fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${displayMeat.id}`)
+    .then(res => res.json())
+    .then(console.log)
 }
