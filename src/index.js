@@ -9,12 +9,18 @@ const proteinInBox = document.querySelectorAll(".proteinInBox")
 proteinInBox.forEach((ele) => {
   ele.addEventListener('click', (e)=> { 
     // debugger
+    
     fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${e.target.id}`)
     .then(res => res.json())
     .then(food => food.meals.forEach(showRecipeBar))
     // e.target.reset()
   })  
 })
+function removeAllChildNodes(parent) {
+    while (parent.firstChild) {
+        parent.removeChild(parent.firstChild);
+    }
+}
 
 
 function showRecipeBar(recipes) {
@@ -25,6 +31,7 @@ function showRecipeBar(recipes) {
   pics.id = recipes["idMeal"]
   console.log("pics showing?")
   recipeBarSpan.appendChild(pics)
+  
 }  
 // Need to troubleshoot images constantly populating on click
 recipeBarSpan.addEventListener('click', (e)=> { 
@@ -63,4 +70,3 @@ function displayRecipeImage(food) {
     ${food.meals[0]["strIngredient18"]}<br>
     ${food.meals[0]["strIngredient19"]}<br>
     ${food.meals[0]["strIngredient20"]}`) }
-
