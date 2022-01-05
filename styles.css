@@ -1,5 +1,7 @@
-.proteinInBox {
-    border-radius: 50%;
+#proteinBox {
+    display: flex;
+    justify-content: center;
+    cursor: pointer
   }
 
   #recipeBar {
@@ -14,4 +16,10 @@
     height: 150px;
     margin-right: 0.5rem;
     cursor: pointer;
+  }
+
+  .proteinInBox {
+    border-radius: 50%;
+    width: 250px;
+    margin: 0 auto;
   }

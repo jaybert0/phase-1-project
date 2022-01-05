@@ -20,8 +20,7 @@
       <img id="salmon" class="proteinInBox" src="salmon-g19235bd82_1280.png" height="200px">
       <img id="beef" class="proteinInBox" src="steak-gc4d1b5e86_1280.png" height="200px">
       
-    </span><br>
-    <span>
+
       <img id="chicken" class="proteinInBox" src="turkey-ga93bba471_1280.png" height="250px">
       <img id="tofu" class="proteinInBox" src="asian-g91ac4626b_1280.png" height="300px">
     </span>
@@ -30,7 +29,7 @@
 <div id = "recipeBar">
   <span id= "recipeBarSpan"></span>
 <!-- Where recipes that are fetched will live after choosing from the carousel. Picture and name of recipe. -->
-  <h1>This is the bar where the recipes thumbnails will show up</h1>
+  
 </div>
 
 <div id = "recipeBox">
@@ -38,13 +37,24 @@
   <h2 id="recipeName">Recipe Name</h2>
   <h2>Ingredient List</h2>
   <h3 id="recipeIngredient">Recipe Ingredient</h3>
-  <h3>Rating:</h3>
-  <p>
-    <span id='rating-display'>Insert rating here</span> / 5
-  </p>
+  
+  <div id = "rating-display">
+    <h4>Recipe Rating <span id="vote-count"></span> /5</h4>
+    <form id="votes-form">
+      <input type="text" placeholder="Enter Rating 1-5" id="votes" name="votes" />
+      <input type="submit" value="Add Rating" />
+    </form>
+    <button id="reset-btn">Reset Rating</button>
+  </div>
+
   <h3>Comment:</h3>
   <p id='comment-display'>
-    Insert comment here
+    <div id="comment"></div>
+    <h4 id="foodComment">Was it delicious? Tell the world!</h4>
+    <form id = "comment-form">
+      <input type="text" placeholder="Enter Comment" id="comments" name="comments" />
+      <input type="submit" value="Add Comment" />
+    </form>
   </p>
 </div>
 
