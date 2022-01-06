@@ -70,14 +70,29 @@ function displayRecipeImage(food) {
   document.getElementById("recipeInstructions").textContent = food.meals[0]["strInstructions"]
   document.getElementById("youtube").src = "https://www.youtube.com/embed/"+newYoutube
     let noNull = Object.fromEntries(Object.entries(food.meals[0]).filter(([_, v]) => v != null && v != '' && v != ' '))
+      console.log("noNull")
       console.log(noNull)
-    let noNullIngredidents = Object.fromEntries(Object.entries(noNull).filter(([key]) => key.includes('strIngredient')))
+    let noNullIngredients = Object.fromEntries(Object.entries(noNull).filter(([key]) => key.includes('strIngredient')))
       console.log("Ingredients")
-      console.log(noNullIngredidents)
+      console.log(noNullIngredients)
     let noNullMeasurements = Object.fromEntries(Object.entries(noNull).filter(([key]) => key.includes('strMeasure')))
       console.log('Measurements')
       console.log(noNullMeasurements)
-  // document.getElementById("recipeIngredient").textContent = ()
+    let ingArr = Object.values(noNullIngredients)
+      console.log("Ingredient Values")
+      console.log(ingArr)
+    let meaArr = Object.values(noNullMeasurements)
+      console.log("Measurements Values")
+      console.log(meaArr)
+  let ingList = ""
+  for(let i=0; i<ingArr.length; i++) {
+    ingList += '<li>' + meaArr[i] + ' ' + ingArr[i]; 
+  }
+  ingList = '<ul>' + ingList +  '</ul>'
+  
+  document.getElementById("recipeIngredient").innerHTML = ingList
+    
+  
 }
 function handleForm(){
   document.getElementById('votes-form').addEventListener('submit', (event) => {
