@@ -6,6 +6,80 @@
   <title>Meat Me Halfway for Dinner</title>
   <link rel="stylesheet" type="text/css" href="styles.css" />
   <script defer type="text/javascript" src="./src/index.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Bungee Shade' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Carrois Gothic' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Coda' rel='stylesheet'>
+
+</head>
+
+<body>
+  <header>
+    <h3 class = "header">Meat Me Halfway for Dinner</h3>
+    <h4 class = "header2">Have you ever found it difficult to decide what to cook with a friend?<br>
+    Do you plan your meals around the protein you have in the refrigerator?<br>
+    "Meat" Halfway with <br><br><strong>Meat Me Halfway for Dinner</strong></h4>
+    <h5 class = directions>Click one of the Proteins below to get started</h5>
+  </header>
+  <div id = "proteinBox">
+    <span>
+      <img id="pork" class="proteinInBox" src="bacon-g792aca4d3_1280.png" title="Click on me for PORK RECIPES!" height="200px">
+      <img id="salmon" class="proteinInBox" src="salmon-g19235bd82_1280.png" title="Click on me for SALMON RECIPES!" height="200px">
+      <img id="beef" class="proteinInBox" src="steak-gc4d1b5e86_1280.png" title="Click on me for BEEF RECIPES!" height="200px">
+      <img id="chicken" class="proteinInBox" src="turkey-ga93bba471_1280.png" title="Click on me for CHICKEN RECIPES!" height="250px">
+      <img id="tofu" class="proteinInBox" src="asian-g91ac4626b_1280.png" title="Click on me for TOFU RECIPES!" height="300px">
+    </span>
+</div>
+
+<div id = "recipeBar">
+  <span id= "recipeBarSpan"></span>
+<!-- Where recipes that are fetched will live after choosing from the carousel. Picture and name of recipe. -->
+  
+</div>
+
+<div id = "recipeBox">
+  <img id="recipeImage" src="image-placeholder.jpg" alt="Recipe Image" />
+  <h2 id="recipeName">Recipe Name</h2>
+  <h2>Ingredient List</h2>
+  <h3 id="recipeIngredient">Recipe Ingredient</h3>
+  <h2>Instructions</h2>
+  <h3 id="recipeInstructions">Recipe Ingredient</h3>
+  <iframe id="youtube" class="video" width="420" height="315"
+    src="https://www.youtube.com/embed/rLXYILcRoPQ">
+  </iframe>
+</div>
+
+  <div id = "rating-display">
+    <h4>Recipe Rating<span id="vote-count"></span> /5</h4>
+    <form id="votes-form">
+     
+      <input type="text" placeholder="Enter Rating 1-5" id="votes" name="votes" />
+      <input type="submit" value="Add Rating" />
+    </form>
+    <button id="reset-btn">Reset Rating</button>
+  </div>
+
+  <div id="comment">
+
+  <h3>Comment:</h3>
+  <p id='comment-display'>
+    <h4 id="foodComment">Was it delicious? Tell the world!</h4>
+    <form id = "comment-form">
+      <input type="text" placeholder="Enter Comment" id="comments" name="comments" />
+      <input type="submit" value="Add Comment" />
+    </form>
+  </p>
+</div>
+
+</body>
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Meat Me Halfway for Dinner</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <script defer type="text/javascript" src="./src/index.js"></script>
 </head>
 
 
@@ -45,7 +119,7 @@
     <h3 class = "header">Meat Me Halfway for Dinner</h3>
     <h4 class = "header2">Have you ever found it difficult to decide what to cook with a friend?<br>
     Do you plan your meals around the protein you have in the refrigerator?<br>
-    "Meat" Halfway with <b>Meat Me Halfway for Dinner</b></h4>
+    "Meat" Halfway with <br><strong>Meat Me Halfway for Dinner</strong></h4>
   </header>
   <div id = "proteinBox">
     <span>
@@ -61,7 +135,7 @@
   <span id= "recipeBarSpan"></span>
 <!-- Where recipes that are fetched will live after choosing from the carousel. Picture and name of recipe. -->
   
-</div>
+<!-- </div>
 
 <div id = "recipeBox">
   <img id="recipeImage" src="image-placeholder.jpg" alt="Recipe Image" />
@@ -105,4 +179,4 @@
   </p>
 </div>
 
-</body>
+</body> --> -->

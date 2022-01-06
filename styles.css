@@ -3,6 +3,143 @@
   justify-content: center;
   cursor: pointer
 }
+.directions {
+  font-family: 'Carrois Gothic';
+  font-variant: small-caps
+}
+strong {
+    font-family: 'Carrois Gothic';font-size: 50px;
+    font-weight: bold;
+    text-decoration: underline overline
+}
+#recipeBar {
+  display: flex;
+  overflow-x: auto;
+  margin: 1rem 0;
+  max-width: calc(100vw - 2rem);
+}
+
+#recipeBar img {
+  flex: 0 1 auto;
+  height: 150px;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.proteinInBox {
+  border-radius: 50%;
+  width: 250px;
+  margin: 0 auto;
+}
+body {
+  background: #A4BEF3
+}
+*{
+  text-align:center
+}
+.header {
+        font-family: 'Bungee Shade';font-size: 50px;
+    }
+/* .header{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, serif;
+  font-size:75px;
+} */
+.header2 {
+    font-family: 'Carrois Gothic';font-size: 22px;
+}
+/* .header2{
+  font-family: helvetica, arial, sans-serif;
+  font-size: 20px;
+} */
+#recipeBox {
+    font-family: 'Coda';font-size: 20px;
+}
+#recipeInstructions {
+  border-style:double;
+  background-color: #87A0B2;
+  outline-color: #553D36;
+  outline-style: solid;
+  border-radius: 20px;
+  margin-left: 300px;
+  margin-right: 300px;
+
+}
+#recipeIngredient {
+  border-style:double;
+  background-color: #87A0B2;
+  outline-color: #553D36;
+  outline-style: solid;
+  border-radius: 20px;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+#recipeName {
+  border-style:double;
+  background-color: #87A0B2;
+  outline-color: #553D36;
+  outline-style: solid;
+  border-radius: 20px;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+#ingredientList{
+  border-style:double;
+  background-color: #87A0B2;
+  outline-color: #553D36;
+  outline-style: solid;
+  border-radius: 20px;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+#instructions{
+  border-style:double;
+  background-color: #87A0B2;
+  outline-color: #553D36;
+  outline-style: solid;
+  border-radius: 20px;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+#recipeImage{
+  border-style:double solid;
+  outline-color: #553D36;
+  outline-style: solid;
+  border-radius: 20px;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+#proteinBox{
+  border-style:double;
+  border-radius: 20px;
+  outline-style: solid;
+  outline-color: #553D36;
+  background-color: #87A0B2;
+
+}
+#recipeBar{
+  border-style:double;
+  border-radius: 20px;
+  outline-style: solid;
+  outline-color: #553D36;
+  background-color: #87A0B2;
+  margin-left: auto;
+   margin-right: auto;
+   margin-top: auto;
+   margin-bottom: auto;
+  text-align: center;
+  padding: auto;
+}   
+#rating-display {
+    font-family: 'Coda';font-size: 20px;
+}
+#comment {
+    font-family: 'Coda';font-size: 20px;
+}
+/* #proteinBox {
+  display: flex;
+  justify-content: center;
+  cursor: pointer
+}
 
 #recipeBar {
   display: flex;
@@ -111,4 +248,4 @@ body {
    margin-bottom: auto;
   text-align: center;
   padding: auto;
-}   
+}    */
