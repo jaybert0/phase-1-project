@@ -30,11 +30,11 @@ body {
   text-align:center
 }
 .header{
-  font-family: "fantasy", "copperplate" ;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, serif;
   font-size:75px;
 }
 .header2{
-  font-family:"serif", "Georgia" ;
+  font-family: helvetica, arial, sans-serif;
   font-size: 20px;
 }
 #recipeInstructions {
@@ -105,6 +105,10 @@ body {
   outline-style: solid;
   outline-color: #553D36;
   background-color: #87A0B2;
-  margin-left: 300px;
-  margin-right: 300px;
+  margin-left: auto;
+   margin-right: auto;
+   margin-top: auto;
+   margin-bottom: auto;
+  text-align: center;
+  padding: auto;
 }   

@@ -88,8 +88,7 @@ function displayRecipeImage(food) {
   for(let i=0; i<ingArr.length; i++) {
     ingList += '<li>' + meaArr[i] + ' ' + ingArr[i]; 
   }
-  ingList = '<ul>' + ingList +  '</ul>'
-  
+    ingList = '<ul>' + ingList +  '</ul>'
   document.getElementById("recipeIngredient").innerHTML = ingList
     
   
