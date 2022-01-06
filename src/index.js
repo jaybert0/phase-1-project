@@ -3,7 +3,8 @@ function init() {
   resetVoteCount()
   enterComment()
 }
-init()
+// init()
+document.addEventListener("DOMContentLoaded", init)
 
 // Global Variables
 const recipeBar = document.getElementById('recipeBar');
@@ -59,9 +60,7 @@ function enterComment() {
 
 function showRecipeBar(recipes) {
   // const span = document.createElement("span")
-  
-
-  // removeAllChildNodes(recipeBarSpan)
+    // removeAllChildNodes(recipeBarSpan)
   const pics = document.createElement('img')
   pics.src = recipes["strMealThumb"]
   pics.id = recipes["idMeal"]
