@@ -88,6 +88,7 @@ function displayRecipeImage(food) {
   console.log(food)
   foodImage.src = food.meals[0]["strMealThumb"]
   document.getElementById("recipeName").textContent = food.meals[0]["strMeal"]
+  document.getElementById("recipeInstructions").textContent = food.meals[0]["strInstructions"]
   document.getElementById("recipeIngredient").innerHTML = (`${food.meals[0]["strMeasure1"]} ${food.meals[0]["strIngredient1"]}<br>
     ${food.meals[0]["strMeasure2"]} ${food.meals[0]["strIngredient2"]}<br>
     ${food.meals[0]["strMeasure3"]} ${food.meals[0]["strIngredient3"]}<br>
