@@ -1,7 +1,21 @@
-#proteinBox {
-  display: flex;
-  justify-content: center;
-  cursor: pointer
+body {
+  background: #A4BEF3
+}
+*{
+  text-align:center
+}
+.header {
+  font-family: 'Bungee Shade';font-size: 50px;
+}
+
+.header2 {
+  font-family: 'Carrois Gothic';font-size: 22px;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
 }
 .directions {
   font-family: 'Carrois Gothic';
@@ -12,13 +26,36 @@ strong {
     font-weight: bold;
     text-decoration: underline overline
 }
-#recipeBar {
+.proteinInBox {
+  border-radius: 50%;
+  width: 250px;
+  margin: 0 auto;
+}
+#proteinBox{
   display: flex;
-  overflow-x: auto;
-  margin: 1rem 0;
-  max-width: calc(100vw - 2rem);
+  justify-content: center;
+  cursor: pointer
+  border-style:double;
+  border-radius: 20px;
+  outline-style: solid;
+  outline-color: #553D36;
+  background-color: #87A0B2;
+
 }
 
+#recipeBar{
+  border-style:double;
+  border-radius: 20px;
+  outline-style: solid;
+  outline-color: #553D36;
+  background-color: #87A0B2;
+  margin-left: auto;
+   margin-right: auto;
+   margin-top: auto;
+   margin-bottom: auto;
+  text-align: center;
+  padding: auto;
+}   
 #recipeBar img {
   flex: 0 1 auto;
   height: 150px;
@@ -26,31 +63,6 @@ strong {
   cursor: pointer;
 }
 
-.proteinInBox {
-  border-radius: 50%;
-  width: 250px;
-  margin: 0 auto;
-}
-body {
-  background: #A4BEF3
-}
-*{
-  text-align:center
-}
-.header {
-        font-family: 'Bungee Shade';font-size: 50px;
-    }
-/* .header{
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, serif;
-  font-size:75px;
-} */
-.header2 {
-    font-family: 'Carrois Gothic';font-size: 22px;
-}
-/* .header2{
-  font-family: helvetica, arial, sans-serif;
-  font-size: 20px;
-} */
 #recipeBox {
     font-family: 'Coda';font-size: 20px;
 }
@@ -109,36 +121,11 @@ body {
   margin-right: 300px;
   width: 50%;
 }
-#proteinBox{
-  border-style:double;
-  border-radius: 20px;
-  outline-style: solid;
-  outline-color: #553D36;
-  background-color: #87A0B2;
 
-}
-#recipeBar{
-  border-style:double;
-  border-radius: 20px;
-  outline-style: solid;
-  outline-color: #553D36;
-  background-color: #87A0B2;
-  margin-left: auto;
-   margin-right: auto;
-   margin-top: auto;
-   margin-bottom: auto;
-  text-align: center;
-  padding: auto;
-}   
+
 #rating-display {
     font-family: 'Coda';font-size: 20px;
 }
 #comment {
     font-family: 'Coda';font-size: 20px;
-}
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  
 }

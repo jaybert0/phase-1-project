@@ -42,14 +42,13 @@ recipeBarSpan.addEventListener('click', (e)=> {
 )
 function displayRecipeImage(food) {
   const foodImage = document.getElementById("recipeImage")
-  console.log(food)
   // For youtube embed including extracting video id
   let youtubeLink = food.meals[0]["strYoutube"]
   function getId(url) {
     const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
     const match = url.match(regExp);
-    console.log(regExp)
-    console.log(match)
+    // console.log(regExp)
+    // console.log(match)
     return (match && match[2].length === 11)
     ? match[2]
     : null;
@@ -76,7 +75,7 @@ function displayRecipeImage(food) {
 function handleForm(){
   document.getElementById('votes-form').addEventListener('submit', (event) => {
     event.preventDefault();
-    console.log("Thanks for the rating")
+    
       let user_input = event.target.votes.value
       document.getElementById("vote-count").textContent = user_input
   })
@@ -92,7 +91,7 @@ function resetVoteCount(){
 function enterComment() {
   document.getElementById('comment-form').addEventListener('submit', (event) => {
     event.preventDefault();
-    console.log("Delish?")
+
       let comment = event.target.comments.value
     document.getElementById("foodComment").textContent = comment
   })
